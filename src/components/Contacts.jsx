@@ -53,7 +53,7 @@ const Contacts = ({editUser}) => {
                   <TableCell align="left">{item.username}</TableCell>
                   <TableCell align="left">{item.phoneNumber}</TableCell>
                   <TableCell align="left">{item.gender}</TableCell>
-                  <TableCell align="center" onClick={() => DeleteUser}>
+                  <TableCell align="center" onClick={() => DeleteUser(item.id)}>
                     <DeleteIcon />
                   </TableCell>
                   <TableCell align="center" onClick={() => editUser(item.id, item.username, item.phoneNumber, item.gender)}>

@@ -14,7 +14,7 @@ import {
 import { AccountCircle } from '@mui/icons-material';
 import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
 
-const FormComponent = ({info, setInfo, handleSubmit}) => {
+const FormComponent = ({info, setInfo, handleSubmit, isAdd}) => {
   const handleChange = (e) => {
     e.preventDefault()
     // const name = e.target.name
@@ -62,8 +62,8 @@ const FormComponent = ({info, setInfo, handleSubmit}) => {
             <TextField
               variant="outlined"
               name="phoneNumber"
-              value={null}
-              onChange={null}
+              value={info.phoneNumber}
+              onChange={handleChange}
               placeholder="Phone Number"
               InputProps={{
                 startAdornment: (
@@ -83,7 +83,7 @@ const FormComponent = ({info, setInfo, handleSubmit}) => {
               </Select>
             </FormControl>
             <Button variant="contained" type="submit" value="Submit">
-              Add
+              {isAdd}
             </Button>
           </Stack>
         </form>
