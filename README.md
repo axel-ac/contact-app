@@ -24,8 +24,6 @@ contact-app (folder)
 ```
 ## Project-gif
 ![contact-app](https://github.com/axel-ac/contact-app/assets/102467587/6e96736f-ab2f-4f18-8944-65aaecdcefd3)
-## Project-link
-
 ### At the end of the project, following topics are to be covered;
 - HTML
 - CSS
